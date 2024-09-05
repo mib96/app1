@@ -3,7 +3,7 @@ os: linux
 files:
   - source: src
     destination: /wwwroot/
-  - source: scripts/webapi.service
+  - source: scripts/weather.service
     destination: /etc/systemd/system
 hooks:
   BeforeInstall:
