@@ -3,7 +3,7 @@ os: linux
 files:
   - source: src
     destination: /wwwroot/
-  - source: deploy-scripts/webapi.service
+  - source: scripts/webapi.service
     destination: /etc/systemd/system
 hooks:
   BeforeInstall:
