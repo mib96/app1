@@ -6,14 +6,6 @@ files:
   - source: scripts/weather.service
     destination: /etc/systemd/system
 hooks:
-  BeforeInstall:
-    - location: scripts/before-install.sh
-      timeout: 120
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_app.sh
-      timeout: 120
-      runas: root
   ApplicationStart:
     - location: scripts/application-start.sh
       timeout: 120
