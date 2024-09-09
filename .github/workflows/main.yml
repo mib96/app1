@@ -47,4 +47,4 @@ jobs:
         aws s3 cp src/scripts s3://appdeploygit/githubactions/ --recursive
     - name: Deploy to EC2 instance
       run: |
-        aws deploy create-deployment --application-name app1 --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name app1-dg --s3-location bucket=appdeploygit,key=githubactions/publish.zip,bundleType=zip
+        aws deploy create-deployment --application-name myapp --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name myappdeploy --s3-location bucket=appdeploygit,key=githubactions/publish.zip,bundleType=zip
