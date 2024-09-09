@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl stop weather.service
+systemctl stop WeatherForecastApi.Web.service
