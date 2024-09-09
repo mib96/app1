@@ -1,3 +1,3 @@
 #!/bin/bash
-systemctl stop weather.service
-systemctl start weather.service
+systemctl stop WeatherForecastApi.Web.service
+systemctl start WeatherForecastApi.Web.service
