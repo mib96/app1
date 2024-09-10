@@ -37,6 +37,7 @@ jobs:
 
     - name: ZIP publish
       uses: TheDoctor0/zip-release@0.7.6
+      with:
         filename: publish.zip
         path: ./publish
     
