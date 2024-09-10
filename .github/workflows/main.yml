@@ -36,7 +36,9 @@ jobs:
         path: ./publish
 
     - name: ZIP publish
-      run: zip -r ./publish.zip ./publish/*
+      uses: TheDoctor0/zip-release@0.7.6
+        filename: publish.zip
+        path: ./publish
     
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
