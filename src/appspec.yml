@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: src/
+  - source: ./
     destination: /wwwroot/
   - source: src/scripts/WeatherForecastApi.Web.service
     destination: /etc/systemd/system/
 hooks:
   ApplicationStart:
-    - location: src/scripts/application-start.sh
+    - location: ./scripts/application-start.sh
       timeout: 120
       runas: root
