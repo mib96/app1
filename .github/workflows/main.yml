@@ -36,7 +36,7 @@ jobs:
         path: ./publish
 
     - name: ZIP publish
-      run: zip -r ./publish.zip .
+      run: zip -r ./publish.zip ./publish/*
     
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
